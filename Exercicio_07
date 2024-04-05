@@ -1,0 +1,54 @@
+7) Escrever um programa em que leia dois valores para as variáveis A e B,
+e efetuar as trocas dos valores de forma que a variável A passe a possuir o valor da variável B,
+e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados.
+
+--------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_07
+{
+    public static void main(String[] args) {
+        Scanner dados = new Scanner(System.in);
+        
+        double A, B, Trocar;
+        
+        System.out.println("Informe o Primeiro Valor A: ");       
+        A = dados.nextDouble();
+        
+        System.out.println("Informe o Segundo Valor B: ");
+        B = dados.nextDouble();
+        
+        Trocar = A;
+        A = B;
+        B = Trocar;
+ 
+        System.out.println("O valor de A é: " + A);
+        System.out.println("O valor de B é: " + B);
+        
+    }
+    
+}
+
+--------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_07_01
+{
+    public static void main(String[] args) {
+        
+        int A = 35, B = 12, Trocar;
+        
+        System.out.println("Valor A: 35");       
+        
+        System.out.println("Valor B: 12");
+        
+        Trocar = A;
+        A = B;
+        B = Trocar;
+ 
+        System.out.println("O valor de A é: " + A);
+        System.out.println("O valor de B é: " + B);
+        
+    }
+    
+}

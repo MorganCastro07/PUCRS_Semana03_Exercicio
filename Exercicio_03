@@ -1,0 +1,52 @@
+3) Escrever um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). 
+Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar seu nome, o salário fixo e salário no final do mês.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_03
+{
+    public static void main (String args []) {
+        
+        System.out.println("Nome do Vendedor: Morgan Cardoso de Castro");
+        
+        double Comissao, SalarioFixo, TotalVendasMes;
+                
+        System.out.println("Salário Fixo: R$ 2.700");       
+        SalarioFixo = 2700;
+        
+        System.out.println("Total de Vendas no MÊS: R$ 9.000");
+        TotalVendasMes = 9000;
+        
+        System.out.println("Comissão das Vendas: 15%");
+        Comissao = 0.15;
+        
+        System.out.println("Salário Final do MÊS: "+ (SalarioFixo+(TotalVendasMes*Comissao))); 
+        
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_03_1
+{
+    public static void main (String args []) {
+        Scanner dados = new Scanner(System.in);
+        
+        double SalarioFixo, TotalVendasMes, Comissao;
+        
+        System.out.println("Nome do Vendedor: Morgan Cardoso de Castro");
+        
+        System.out.println("Salário Fixo: R$ 2.700");       
+        SalarioFixo = 2700;
+        
+        System.out.println("Total de Vendas no MÊS");
+        TotalVendasMes = dados.nextDouble();
+        
+        System.out.println("Comissão das Vendas: 15%");
+        Comissao = 0.15;
+        
+        System.out.println("Salário Final do MÊS: "+(SalarioFixo+(TotalVendasMes*Comissao)));
+        
+    }
+}

@@ -10,7 +10,7 @@ public class Exercicio_03
         
         System.out.println("Nome do Vendedor: Morgan Cardoso de Castro");
         
-        double Comissao, SalarioFixo, TotalVendasMes;
+        double Comissao, SalarioFixo, TotalVendasMes, SalarioRecebido;
                 
         System.out.println("Salário Fixo: R$ 2.700");       
         SalarioFixo = 2700;
@@ -21,10 +21,13 @@ public class Exercicio_03
         System.out.println("Comissão das Vendas: 15%");
         Comissao = 0.15;
         
-        System.out.println("Salário Final do MÊS: "+ (SalarioFixo+(TotalVendasMes*Comissao))); 
+        SalarioRecebido = (SalarioFixo+(TotalVendasMes*Comissao));
+        
+        System.out.println("Salário Final do MÊS: "+ SalarioRecebido); 
         
     }
 }
+
 -------------------------------------------------------------------------------------------------------------
 
 import java.util.Scanner;
@@ -33,7 +36,7 @@ public class Exercicio_03_1
     public static void main (String args []) {
         Scanner dados = new Scanner(System.in);
         
-        double SalarioFixo, TotalVendasMes, Comissao;
+         double Comissao, SalarioFixo, TotalVendasMes, SalarioRecebido;
         
         System.out.println("Nome do Vendedor: Morgan Cardoso de Castro");
         
@@ -46,7 +49,9 @@ public class Exercicio_03_1
         System.out.println("Comissão das Vendas: 15%");
         Comissao = 0.15;
         
-        System.out.println("Salário Final do MÊS: "+(SalarioFixo+(TotalVendasMes*Comissao)));
+        SalarioRecebido = (SalarioFixo+(TotalVendasMes*Comissao));
+        
+        System.out.println("Salário Final do MÊS: "+ SalarioRecebido);
         
     }
 }

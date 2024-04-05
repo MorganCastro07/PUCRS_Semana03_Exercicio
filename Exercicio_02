@@ -1,0 +1,23 @@
+2) Escrever um programa que receba dois números e ao final mostre a soma apenas, subtração, multiplicação, e a divisão dos números lidos.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_02
+{
+    public static void main (String args []) {
+        Scanner dados = new Scanner(System.in);
+        
+        double numero;
+        
+        System.out.println("Informe um Valor Inteiro Positivo: ");
+        numero = dados.nextDouble();
+        
+        System.out.println("Resultado Subtração: " + (numero-3));
+        System.out.println("Resultado Multiplicação: " + (numero*3));
+        System.out.println("Resultado Divisão: " + (numero/3));
+        
+        System.out.println("Os Dados dos Resultados Acima, Estão Sendo por Número [3]");
+        
+    }
+}

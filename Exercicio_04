@@ -47,7 +47,7 @@ public class Exercicio_04_01
         
         MEDIA = (NOTA1+NOTA2+NOTA3)/3;
         
-        System.out.println("Media Final: " + (MEDIA));
+        System.out.println("Media Final: " + MEDIA );
         
         if ((MEDIA)>=7){
             System.out.println("Aluno APROVADO");

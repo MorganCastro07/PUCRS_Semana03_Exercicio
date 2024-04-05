@@ -23,3 +23,37 @@ public class Exercicio_04
         }
     }
 }
+
+--------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_04_01
+{
+    public static void main (String args []) {
+        Scanner dados = new Scanner(System.in);
+        
+        double NOTA1, NOTA2, NOTA3, MEDIA;
+        
+        System.out.println("Nome do Aluno: Morgan Cardoso de Castro");
+        
+        System.out.println("Informe a NOTA da Primeira PROVA: ");
+        NOTA1 = dados.nextDouble();
+        
+        System.out.println("Informe a NOTA da Segunda PROVA: ");
+        NOTA2 = dados.nextDouble();
+        
+        System.out.println("Informe a NOTA da Terceira PROVA: ");
+        NOTA3 = dados.nextDouble();
+        
+        MEDIA = (NOTA1+NOTA2+NOTA3)/3;
+        
+        System.out.println("Media Final: " + (MEDIA));
+        
+        if ((MEDIA)>=7){
+            System.out.println("Aluno APROVADO");
+        }else{
+            System.out.println("Aluno REPROVADO");
+            }
+    }
+        
+}

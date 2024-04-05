@@ -1,0 +1,25 @@
+4) Escrever um programa que leia o nome de um aluno e as notas das três provas que ele obteve no semestre.
+No final informar o nome do aluno e a sua média (aritmética).
+
+-------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_04
+{
+    public static void main (String args []) {
+        
+        System.out.println("Nome do Aluno: Morgan Cardoso de Castro");
+        
+        double Nota1 = 7, Nota2 = 8, Nota3 = 6, MEDIA;
+        
+        MEDIA = (Nota1+Nota2+Nota3)/3;
+        
+        System.out.println("Media Final: " + MEDIA);
+        
+        if (((Nota1+Nota2+Nota3)/3)>=7){
+            System.out.println("Aluno APROVADO");
+        }else{
+            System.out.println("Aluno REPROVADO");
+        }
+    }
+}

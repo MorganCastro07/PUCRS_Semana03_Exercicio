@@ -1,0 +1,21 @@
+5) Escreva um pequeno software que peça a sua idade e a idade da sua mãe. 
+Mostre a diferença de idade entre o filho e a mãe. Em seguida, imprima na tela, essas três informações.
+
+-------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_05
+{
+    public static void main (String args []) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int ano1, ano2;
+        
+        System.out.println("Informe o Ano de Sua Mae (usando 4 digitos ex: 1900); ");
+        ano1 = entrada.nextInt();
+        System.out.println("Informe o Ano de Seu Filho (usando 4 digitos ex: 1900); ");
+        ano2 = entrada.nextInt();
+        
+        System.out.println("Diferencia de Ano " + (ano1-ano2) + " Anos");
+    }
+}

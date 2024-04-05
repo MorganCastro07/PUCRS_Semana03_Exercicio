@@ -1,0 +1,21 @@
+6) Determine qual é a idade que o usuário faz no ano atual. 
+Para isso solicite o ano de nascimento do usuário e o ano atual.
+
+--------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_05
+{
+    public static void main (String args []) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int ano1, ano2;
+        
+        System.out.println("Informe o Ano de Sua Mae (usando 4 digitos ex: 1900); ");
+        ano1 = entrada.nextInt();
+        System.out.println("Informe o Ano de Seu Filho (usando 4 digitos ex: 1900); ");
+        ano2 = entrada.nextInt();
+        
+        System.out.println("Diferencia de Ano " + (ano1-ano2) + " Anos");
+    }
+}

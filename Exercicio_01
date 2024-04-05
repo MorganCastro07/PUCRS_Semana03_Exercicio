@@ -1,0 +1,20 @@
+1) Escrever um programa Java que receba dois números e exiba o resultado da sua soma.
+
+-------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Exercicio_01
+{
+    public static void main (String args []) {
+        Scanner dados = new Scanner(System.in);
+        
+        double Valor1, Valor2;
+                
+        System.out.println("Informe o Primeiro Valor Inteiros: ");
+        Valor1 = dados.nextDouble();
+        System.out.println("Informe o Segundo Valor Inteiros: ");
+        Valor2 = dados.nextDouble();
+        
+        System.out.println("Resultado: " + (Valor1 + Valor2));
+    }
+}
